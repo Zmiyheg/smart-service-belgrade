@@ -77,7 +77,7 @@ h2 {
 
 .why-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки в один ряд */
     gap: 20px;
     max-width: 1100px;
     margin: 0 auto;
@@ -106,7 +106,18 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Адаптивность для телефонов */
+@media (max-width: 900px) {
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряд на маленьких экранах */
+    }
+}
 
+@media (max-width: 500px) {
+    .why-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 карточка в ряд на очень маленьких экранах */
+    }
+}
 
 /* Блок "Наши услуги" */
 .services {
