@@ -26,6 +26,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+    position: relative;
+    z-index: 1001;
 }
 
 .language-switcher button:hover {
@@ -51,6 +53,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
 }
 
 .hero-content {
