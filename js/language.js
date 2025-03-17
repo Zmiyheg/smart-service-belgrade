@@ -14,16 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "why-4": "Доверие клиентов",
             "why-4-text": "Ценим вашу лояльность выше сиюминутной выгоды.",
             "services-title": "📣 Наши услуги",
-            "service-1": "Базовое ТО",
-            "service-2": "Ремонт подвески и тормозов",
-            "service-3": "Замена цепей и ремней ГРМ",
-            "service-4": "Ремонт узлов и агрегатов",
-            "service-5": "Осмотр авто перед покупкой",
-            "service-6": "Компьютерная диагностика",
-            "service-7": "Чип-тюнинг (Stage, DSG, Экология)",
-            "contacts-title": "📍 Наши сервисы",
-            "contact-1-title": "Сервис в Белграде",
-            "contact-2-title": "Сервис в Новом Саде"
+            "contacts-title": "📍 Наши сервисы"
         },
         sr: {
             title: "🚗 Smart Service",
@@ -39,22 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
             "why-4": "Poverenje klijenata",
             "why-4-text": "Vaše poverenje cenimo više od trenutne dobiti.",
             "services-title": "📣 Naše usluge",
-            "service-1": "Osnovno održavanje",
-            "service-2": "Popravka oslanjanja i kočnica",
-            "service-3": "Zamena lanca i kaiša razvodnog mehanizma",
-            "service-4": "Popravka agregata i komponenti",
-            "service-5": "Pregled automobila pre kupovine",
-            "service-6": "Kompjuterska dijagnostika",
-            "service-7": "Čip-tjuning (Stage, DSG, Ekologija)",
-            "contacts-title": "📍 Naši servisi",
-            "contact-1-title": "Servis u Beogradu",
-            "contact-2-title": "Servis u Novom Sadu"
+            "contacts-title": "📍 Naši servisi"
         }
     };
 
     function changeLanguage(lang) {
         if (!translations[lang]) return;
-
         for (let key in translations[lang]) {
             let element = document.getElementById(key);
             if (element) {
@@ -63,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Гарантированная работа кнопок
     document.getElementById("lang-ru").addEventListener("click", () => changeLanguage("ru"));
     document.getElementById("lang-sr").addEventListener("click", () => changeLanguage("sr"));
 });
