@@ -157,3 +157,52 @@ body {
         margin-bottom: 15px;
     }
 }
+/* Общие стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Блок услуг - делаем их в один ряд */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 20px);
+}
+
+.service-item span {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 900px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item {
+        width: 90%;
+    }
+}
