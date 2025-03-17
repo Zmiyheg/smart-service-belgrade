@@ -11,6 +11,12 @@
 </head>
 <body>
 
+<!-- Переключение языка -->
+<div class="language-switcher">
+    <button id="lang-ru">🇷🇺 Русский</button>
+    <button id="lang-sr">🇷🇸 Srpski</button>
+</div>
+
 <!-- Главный экран -->
 <header class="hero">
     <div class="hero-overlay"></div>
@@ -19,12 +25,9 @@
         <p id="subtitle">Сеть автосервисов в Белграде и Новом Саде</p>
         <a href="https://t.me/SmartServiceBG" class="button" id="btn-contact">Записаться в Telegram</a>
     </div>
-  <div class="language-switcher">
-    <button id="lang-ru">🇷🇺 Русский</button>
-    <button id="lang-sr">🇷🇸 Srpski</button>
-</div>
 </header>
 
+<!-- Почему мы? -->
 <section class="why-us">
     <h2 id="why-title">🤔 Почему выбирают нас?</h2>
     <div class="why-grid">
@@ -54,37 +57,36 @@
 <!-- Наши услуги -->
 <section class="services">
     <h2 id="services-title">📣 Наши услуги</h2>
-    <div class="service-slider">
-        <div class="service-track">
-            <div class="service-item"><span>⚙️</span><p id="service-1">Базовое ТО</p></div>
-            <div class="service-item"><span>🛠️</span><p id="service-2">Ремонт подвески и тормозов</p></div>
-            <div class="service-item"><span>🔩</span><p id="service-3">Замена цепей и ремней ГРМ</p></div>
-            <div class="service-item"><span>🚗</span><p id="service-4">Ремонт узлов и агрегатов</p></div>
-            <div class="service-item"><span>🔍</span><p id="service-5">Осмотр авто перед покупкой</p></div>
-            <div class="service-item"><span>💻</span><p id="service-6">Компьютерная диагностика</p></div>
-            <div class="service-item"><span>🚀</span><p id="service-7">Чип-тюнинг (Stage, DSG, Экология)</p></div>
-        </div>
+    <div class="service-container">
+        <div class="service-item"><span>⚙️</span> <p id="service-1">Базовое ТО</p></div>
+        <div class="service-item"><span>🛠️</span> <p id="service-2">Ремонт подвески и тормозов</p></div>
+        <div class="service-item"><span>🔩</span> <p id="service-3">Замена цепей и ремней ГРМ</p></div>
+        <div class="service-item"><span>🚗</span> <p id="service-4">Ремонт узлов и агрегатов</p></div>
+        <div class="service-item"><span>🔍</span> <p id="service-5">Осмотр авто перед покупкой</p></div>
+        <div class="service-item"><span>💻</span> <p id="service-6">Компьютерная диагностика</p></div>
+        <div class="service-item"><span>🚀</span> <p id="service-7">Чип-тюнинг (Stage, DSG, Экология)</p></div>
     </div>
 </section>
 
+<!-- Контакты -->
 <section class="contacts">
     <h2 id="contacts-title">📍 Наши сервисы</h2>
     <div class="contact-container">
         <div class="contact-item">
             <h3 id="contact-1-title">Сервис в Белграде</h3>
-            <p>📍 <a href="https://maps.app.goo.gl/ZRm5Xnz8NZBhvv2V8" id="contact-1-address">Фотине Пејовић 4</a></p>
+            <p>📍 <a href="#" id="contact-1-address">Фотине Пејовић 4</a></p>
             <p>💬 <a href="https://t.me/SmartServiceBG">@SmartServiceBG</a></p>
             <p>📞 <a href="tel:+381611736115">+381 61 173 6115</a></p>
         </div>
         <div class="contact-item">
             <h3 id="contact-2-title">Сервис в Новом Саде</h3>
-            <p>📍 <a href="https://maps.app.goo.gl/Ee4sdzDhfJQVEQgH6" id="contact-2-address">Livadska 1, Petrovaradin</a></p>
+            <p>📍 <a href="#" id="contact-2-address">Livadska 1, Petrovaradin</a></p>
             <p>💬 <a href="https://t.me/SmartService_NS">@SmartService_NS</a></p>
             <p>📞 <a href="tel:+381611736115">+381 61 173 6115</a></p>
         </div>
     </div>
 </section>
 
-<script src="js/language.js"></script>
+<script src="js/language.js" defer></script>
 </body>
 </html>
