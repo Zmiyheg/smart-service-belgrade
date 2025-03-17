@@ -15,112 +15,76 @@
 <header class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-        <h1>🚗 Smart Service</h1>
-        <p>Сеть автосервисов в Белграде и Новом Саде</p>
-        <a href="https://t.me/SmartServiceBG" class="button">Записаться в Telegram</a>
+        <h1 id="title">🚗 Smart Service</h1>
+        <p id="subtitle">Сеть автосервисов в Белграде и Новом Саде</p>
+        <a href="https://t.me/SmartServiceBG" class="button" id="btn-contact">Записаться в Telegram</a>
+    </div>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('ru')">🇷🇺 Русский</button>
+        <button onclick="changeLanguage('sr')">🇷🇸 Srpski</button>
     </div>
 </header>
 
 <section class="why-us">
-    <h2>🤔 Почему выбирают нас?</h2>
+    <h2 id="why-title">🤔 Почему выбирают нас?</h2>
     <div class="why-grid">
         <div class="why-item">
             <img src="images/diagnostics.svg" alt="Диагностика">
-            <h3>Точный анализ</h3>
-            <p>Используем только официальные инструкции и профессиональную диагностику.</p>
+            <h3 id="why-1">Точный анализ</h3>
+            <p id="why-1-text">Используем только официальные инструкции и профессиональную диагностику.</p>
         </div>
         <div class="why-item">
             <img src="images/honest.svg" alt="Честность">
-            <h3>Честный ремонт</h3>
-            <p>Ремонтируем только то, что действительно сломано, без лишних замен.</p>
+            <h3 id="why-2">Честный ремонт</h3>
+            <p id="why-2-text">Ремонтируем только то, что действительно сломано, без лишних замен.</p>
         </div>
         <div class="why-item">
             <img src="images/quality.svg" alt="Качество">
-            <h3>Качество без спешки</h3>
-            <p>Работаем аккуратно и без лишних затрат для клиента.</p>
+            <h3 id="why-3">Качество без спешки</h3>
+            <p id="why-3-text">Работаем аккуратно и без лишних затрат для клиента.</p>
         </div>
         <div class="why-item">
             <img src="images/trust.svg" alt="Доверие">
-            <h3>Доверие клиентов</h3>
-            <p>Ценим вашу лояльность выше сиюминутной выгоды.</p>
+            <h3 id="why-4">Доверие клиентов</h3>
+            <p id="why-4-text">Ценим вашу лояльность выше сиюминутной выгоды.</p>
         </div>
     </div>
 </section>
-
-
 
 <!-- Наши услуги -->
 <section class="services">
-    <h2>📣 Наши услуги</h2>
+    <h2 id="services-title">📣 Наши услуги</h2>
     <div class="service-slider">
         <div class="service-track">
-            <div class="service-item">
-                <span>⚙️</span>
-                <p>Базовое ТО</p>
-            </div>
-            <div class="service-item">
-                <span>🛠️</span>
-                <p>Ремонт подвески и тормозов</p>
-            </div>
-            <div class="service-item">
-                <span>🔩</span>
-                <p>Замена цепей и ремней ГРМ</p>
-            </div>
-            <div class="service-item">
-                <span>🚗</span>
-                <p>Ремонт узлов и агрегатов</p>
-            </div>
-            <div class="service-item">
-                <span>🔍</span>
-                <p>Осмотр авто перед покупкой</p>
-            </div>
-            <div class="service-item">
-                <span>💻</span>
-                <p>Компьютерная диагностика</p>
-            </div>
-            <div class="service-item">
-                <span>🚀</span>
-                <p>Чип-тюнинг (Stage, DSG, Экология)</p>
-            </div>
+            <div class="service-item"><span>⚙️</span><p id="service-1">Базовое ТО</p></div>
+            <div class="service-item"><span>🛠️</span><p id="service-2">Ремонт подвески и тормозов</p></div>
+            <div class="service-item"><span>🔩</span><p id="service-3">Замена цепей и ремней ГРМ</p></div>
+            <div class="service-item"><span>🚗</span><p id="service-4">Ремонт узлов и агрегатов</p></div>
+            <div class="service-item"><span>🔍</span><p id="service-5">Осмотр авто перед покупкой</p></div>
+            <div class="service-item"><span>💻</span><p id="service-6">Компьютерная диагностика</p></div>
+            <div class="service-item"><span>🚀</span><p id="service-7">Чип-тюнинг (Stage, DSG, Экология)</p></div>
         </div>
     </div>
 </section>
-
 
 <section class="contacts">
-    <h2>📍 Наши сервисы</h2>
-    
+    <h2 id="contacts-title">📍 Наши сервисы</h2>
     <div class="contact-container">
-        <!-- Белград -->
         <div class="contact-item">
-            <h3>Сервис в Белграде</h3>
-            <p>📍 <a href="https://maps.app.goo.gl/ZRm5Xnz8NZBhvv2V8">Фотине Пејовић 4</a></p>
+            <h3 id="contact-1-title">Сервис в Белграде</h3>
+            <p>📍 <a href="https://maps.app.goo.gl/ZRm5Xnz8NZBhvv2V8" id="contact-1-address">Фотине Пејовић 4</a></p>
             <p>💬 <a href="https://t.me/SmartServiceBG">@SmartServiceBG</a></p>
             <p>📞 <a href="tel:+381611736115">+381 61 173 6115</a></p>
-            <div class="map">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.726434429407!2d20.4647006!3d44.8179966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65c2b4d2b7bb%3A0x4d17d563f73867e5!2sFotine%20Pejovi%C4%87%204%2C%20Beograd!5e0!3m2!1sru!2srs!4v1646059913432!5m2!1sru!2srs" 
-                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
         </div>
-        
-        <!-- Новый Сад -->
         <div class="contact-item">
-            <h3>Сервис в Новом Саде</h3>
-            <p>📍 <a href="https://maps.app.goo.gl/Ee4sdzDhfJQVEQgH6">Livadska 1, Petrovaradin</a></p>
+            <h3 id="contact-2-title">Сервис в Новом Саде</h3>
+            <p>📍 <a href="https://maps.app.goo.gl/Ee4sdzDhfJQVEQgH6" id="contact-2-address">Livadska 1, Petrovaradin</a></p>
             <p>💬 <a href="https://t.me/SmartService_NS">@SmartService_NS</a></p>
             <p>📞 <a href="tel:+381611736115">+381 61 173 6115</a></p>
-            <div class="map">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.964194515631!2d19.8424498!3d45.2519848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a104d98f2127b%3A0x2e689d3b4569d463!2sLivadska%201%2C%20Petrovaradin!5e0!3m2!1sru!2srs!4v1646060002345!5m2!1sru!2srs" 
-                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
         </div>
     </div>
 </section>
 
-
+<script src="js/language.js"></script>
 </body>
 </html>
