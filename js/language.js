@@ -52,6 +52,8 @@ const translations = {
 };
 
 function changeLanguage(lang) {
+    if (!translations[lang]) return;
+
     for (let key in translations[lang]) {
         let element = document.getElementById(key);
         if (element) {
@@ -59,4 +61,3 @@ function changeLanguage(lang) {
         }
     }
 }
-
