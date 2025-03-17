@@ -1,80 +1,71 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Smart Service | Сеть автосервисов</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+document.addEventListener("DOMContentLoaded", function () {
+    const translations = {
+        ru: {
+            title: "🚗 Smart Service",
+            subtitle: "Сеть автосервисов в Белграде и Новом Саде",
+            "btn-contact": "Записаться в Telegram",
+            "why-title": "🤔 Почему выбирают нас?",
+            "why-1": "Точный анализ",
+            "why-1-text": "Используем только официальные инструкции и профессиональную диагностику.",
+            "why-2": "Честный ремонт",
+            "why-2-text": "Ремонтируем только то, что действительно сломано, без лишних замен.",
+            "why-3": "Качество без спешки",
+            "why-3-text": "Работаем аккуратно и без лишних затрат для клиента.",
+            "why-4": "Доверие клиентов",
+            "why-4-text": "Ценим вашу лояльность выше сиюминутной выгоды.",
+            "services-title": "📣 Наши услуги",
+            "service-1": "Базовое ТО",
+            "service-2": "Ремонт подвески и тормозов",
+            "service-3": "Замена цепей и ремней ГРМ",
+            "service-4": "Ремонт узлов и агрегатов",
+            "service-5": "Осмотр авто перед покупкой",
+            "service-6": "Компьютерная диагностика",
+            "service-7": "Чип-тюнинг (Stage, DSG, Экология)"
+        },
+        sr: {
+            title: "🚗 Smart Service",
+            subtitle: "Mreža auto-servisa u Beogradu i Novom Sadu",
+            "btn-contact": "Rezervišite termin na Telegramu",
+            "why-title": "🤔 Zašto nas biraju?",
+            "why-1": "Precizna dijagnostika",
+            "why-1-text": "Koristimo samo zvanična uputstva i profesionalnu dijagnostiku.",
+            "why-2": "Poštena popravka",
+            "why-2-text": "Popravljamo samo ono što je zaista pokvareno, bez nepotrebnih zamena.",
+            "why-3": "Kvalitet bez žurbe",
+            "why-3-text": "Radimo pažljivo i bez nepotrebnih troškova za klijenta.",
+            "why-4": "Poverenje klijenata",
+            "why-4-text": "Vaše poverenje cenimo više od trenutne dobiti.",
+            "services-title": "📣 Naše usluge",
+            "service-1": "Osnovni servis",
+            "service-2": "Popravka oslanjanja i kočnica",
+            "service-3": "Zamena lanaca i kaiševa bregaste osovine",
+            "service-4": "Popravka sklopova i agregata",
+            "service-5": "Pregled vozila pre kupovine",
+            "service-6": "Kompjuterska dijagnostika",
+            "service-7": "Čip-tuning (Stage, DSG, Ekologija)"
+        }
+    };
 
-<!-- Переключение языка -->
-<div class="language-switcher">
-    <button id="lang-ru">🇷🇺 Русский</button>
-    <button id="lang-sr">🇷🇸 Srpski</button>
-</div>
+    function changeLanguage(lang) {
+        if (!translations[lang]) return;
+        for (let key in translations[lang]) {
+            let element = document.getElementById(key);
+            if (element) {
+                element.textContent = translations[lang][key];
+            }
+        }
+        localStorage.setItem("selectedLanguage", lang);
+    }
 
-<!-- Главный экран -->
-<header class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h1 id="title">🚗 Smart Service</h1>
-        <p id="subtitle">Сеть автосервисов в Белграде и Новом Саде</p>
-        <a href="https://t.me/SmartServiceBG" class="button" id="btn-contact">Записаться в Telegram</a>
-    </div>
-</header>
+    document.getElementById("lang-ru").addEventListener("click", function() {
+        changeLanguage("ru");
+    });
+    
+    document.getElementById("lang-sr").addEventListener("click", function() {
+        changeLanguage("sr");
+    });
 
-<!-- Почему мы? -->
-<section class="why-us">
-    <h2 id="why-title">🤔 Почему выбирают нас?</h2>
-    <div class="why-grid">
-        <div class="why-item">
-            <h3 id="why-1">Точный анализ</h3>
-            <p id="why-1-text">Используем только официальные инструкции и профессиональную диагностику.</p>
-        </div>
-        <div class="why-item">
-            <h3 id="why-2">Честный ремонт</h3>
-            <p id="why-2-text">Ремонтируем только то, что действительно сломано, без лишних замен.</p>
-        </div>
-        <div class="why-item">
-            <h3 id="why-3">Качество без спешки</h3>
-            <p id="why-3-text">Работаем аккуратно и без лишних затрат для клиента.</p>
-        </div>
-        <div class="why-item">
-            <h3 id="why-4">Доверие клиентов</h3>
-            <p id="why-4-text">Ценим вашу лояльность выше сиюминутной выгоды.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Контакты (с картами) -->
-<section class="contacts">
-    <h2 id="contacts-title">📍 Наши сервисы</h2>
-    <div class="contact-container">
-        <div class="contact-item">
-            <h3 id="contact-1-title">Сервис в Белграде</h3>
-            <p>📍 <a href="https://maps.app.goo.gl/ZRm5Xnz8NZBhvv2V8" id="contact-1-address">Фотине Пејовић 4</a></p>
-            <p>💬 <a href="https://t.me/SmartServiceBG">@SmartServiceBG</a></p>
-            <p>📞 <a href="tel:+381611736115">+381 61 173 6115</a></p>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Fotine+Pejovic+4,Beograd" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-        <div class="contact-item">
-            <h3 id="contact-2-title">Сервис в Новом Саде</h3>
-            <p>📍 <a href="https://maps.app.goo.gl/Ee4sdzDhfJQVEQgH6" id="contact-2-address">Livadska 1, Petrovaradin</a></p>
-            <p>💬 <a href="https://t.me/SmartService_NS">@SmartService_NS</a></p>
-            <p>📞 <a href="tel:+381611736115">+381 61 173 6115</a></p>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Livadska+1,Petrovaradin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script src="js/language.js" defer></script>
-</body>
-</html>
+    // Загружаем язык из localStorage при загрузке страницы
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "ru";
+    changeLanguage(savedLanguage);
+});
