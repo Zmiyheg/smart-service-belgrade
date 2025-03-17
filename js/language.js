@@ -13,7 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
             "why-3-text": "Работаем аккуратно и без лишних затрат для клиента.",
             "why-4": "Доверие клиентов",
             "why-4-text": "Ценим вашу лояльность выше сиюминутной выгоды.",
-            "contacts-title": "📍 Наши сервисы"
+            "services-title": "📣 Наши услуги",
+            "service-1": "Базовое ТО",
+            "service-2": "Ремонт подвески и тормозов",
+            "service-3": "Замена цепей и ремней ГРМ",
+            "service-4": "Ремонт узлов и агрегатов",
+            "service-5": "Осмотр авто перед покупкой",
+            "service-6": "Компьютерная диагностика",
+            "service-7": "Чип-тюнинг (Stage, DSG, Экология)"
         },
         sr: {
             title: "🚗 Smart Service",
@@ -28,7 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
             "why-3-text": "Radimo pažljivo i bez nepotrebnih troškova za klijenta.",
             "why-4": "Poverenje klijenata",
             "why-4-text": "Vaše poverenje cenimo više od trenutne dobiti.",
-            "contacts-title": "📍 Naši servisi"
+            "services-title": "📣 Naše usluge",
+            "service-1": "Osnovni servis",
+            "service-2": "Popravka oslanjanja i kočnica",
+            "service-3": "Zamena lanaca i kaiševa bregaste osovine",
+            "service-4": "Popravka sklopova i agregata",
+            "service-5": "Pregled vozila pre kupovine",
+            "service-6": "Kompjuterska dijagnostika",
+            "service-7": "Čip-tuning (Stage, DSG, Ekologija)"
         }
     };
 
