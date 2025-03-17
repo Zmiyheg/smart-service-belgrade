@@ -1,69 +1,117 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const translations = {
-        ru: {
-            title: "🚗 Smart Service",
-            subtitle: "Сеть автосервисов в Белграде и Новом Саде",
-            "btn-contact": "Записаться в Telegram",
-            "why-title": "🤔 Почему выбирают нас?",
-            "why-1": "Точный анализ",
-            "why-1-text": "Используем только официальные инструкции и профессиональную диагностику.",
-            "why-2": "Честный ремонт",
-            "why-2-text": "Ремонтируем только то, что действительно сломано, без лишних замен.",
-            "why-3": "Качество без спешки",
-            "why-3-text": "Работаем аккуратно и без лишних затрат для клиента.",
-            "why-4": "Доверие клиентов",
-            "why-4-text": "Ценим вашу лояльность выше сиюминутной выгоды.",
-            "services-title": "📣 Наши услуги",
-            "service-1": "Базовое ТО",
-            "service-2": "Ремонт подвески и тормозов",
-            "service-3": "Замена цепей и ремней ГРМ",
-            "service-4": "Ремонт узлов и агрегатов",
-            "service-5": "Осмотр авто перед покупкой",
-            "service-6": "Компьютерная диагностика",
-            "service-7": "Чип-тюнинг (Stage, DSG, Экология)",
-            "contacts-title": "📍 Наши сервисы",
-            "contact-1-title": "Сервис в Белграде",
-            "contact-2-title": "Сервис в Новом Саде"
-        },
-        sr: {
-            title: "🚗 Smart Service",
-            subtitle: "Mreža auto-servisa u Beogradu i Novom Sadu",
-            "btn-contact": "Rezervišite termin na Telegramu",
-            "why-title": "🤔 Zašto nas biraju?",
-            "why-1": "Precizna dijagnostika",
-            "why-1-text": "Koristimo samo zvanična uputstva i profesionalnu dijagnostiku.",
-            "why-2": "Poštena popravka",
-            "why-2-text": "Popravljamo samo ono što je zaista pokvareno, bez nepotrebnih zamena.",
-            "why-3": "Kvalitet bez žurbe",
-            "why-3-text": "Radimo pažljivo i bez nepotrebnih troškova za klijenta.",
-            "why-4": "Poverenje klijenata",
-            "why-4-text": "Vaše poverenje cenimo više od trenutne dobiti.",
-            "services-title": "📣 Naše usluge",
-            "service-1": "Osnovno održavanje",
-            "service-2": "Popravka oslanjanja i kočnica",
-            "service-3": "Zamena lanca i kaiša razvodnog mehanizma",
-            "service-4": "Popravka agregata i komponenti",
-            "service-5": "Pregled automobila pre kupovine",
-            "service-6": "Kompjuterska dijagnostika",
-            "service-7": "Čip-tjuning (Stage, DSG, Ekologija)",
-            "contacts-title": "📍 Naši servisi",
-            "contact-1-title": "Servis u Beogradu",
-            "contact-2-title": "Servis u Novom Sadu"
-        }
-    };
+/* Основные стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
 
-    function changeLanguage(lang) {
-        if (!translations[lang]) return;
+/* Переключение языка */
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
 
-        for (let key in translations[lang]) {
-            let element = document.getElementById(key);
-            if (element) {
-                element.textContent = translations[lang][key];
-            }
-        }
+.language-switcher button {
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.language-switcher button:hover {
+    background-color: #006699;
+}
+
+/* Главный экран */
+.hero {
+    background: url('../images/hero.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+/* Почему мы */
+.why-us {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.why-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.why-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+/* Контакты */
+.contacts {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.contact-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Карта */
+.map {
+    margin-top: 15px;
+    width: 100%;
+    height: 250px;
+}
+
+/* Адаптивность для телефонов */
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
     }
-
-    // Гарантированная работа кнопок
-    document.getElementById("lang-ru").addEventListener("click", () => changeLanguage("ru"));
-    document.getElementById("lang-sr").addEventListener("click", () => changeLanguage("sr"));
-});
+    .contact-item {
+        width: 90%;
+    }
+}
