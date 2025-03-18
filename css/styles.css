@@ -252,8 +252,13 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: color 0.3s;
+    padding: 5px 10px;
 }
 
 .nav-language button:hover {
     color: #0088cc;
+}
+
+.nav-language button#lang-sr {
+    display: inline-block;
 }
