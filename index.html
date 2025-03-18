@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
 
@@ -20,15 +25,15 @@
 <!-- Главный экран -->
 <header class="hero">
     <div class="hero-overlay"></div>
-    <div class="hero-content">
+    <div class="hero-content wow fadeInDown">
         <h1 id="title">🚗 Smart Service</h1>
         <p id="subtitle">Сеть автосервисов в Белграде и Новом Саде</p>
-        <a href="https://t.me/SmartServiceBG" class="button" id="btn-contact">Записаться в Telegram</a>
+        <a href="https://t.me/SmartServiceBG" class="button animate__animated animate__pulse animate__infinite" id="btn-contact">Записаться в Telegram</a>
     </div>
 </header>
 
 <!-- Почему мы? -->
-<section class="why-us">
+<section class="why-us wow fadeInUp">
     <h2 id="why-title">🤔 Почему выбирают нас?</h2>
     <div class="why-grid">
         <div class="why-item">
@@ -51,34 +56,34 @@
 </section>
 
 <!-- Наши услуги -->
-<section class="services">
+<section class="services wow fadeInUp">
     <h2 id="services-title">📣 Наши услуги</h2>
     <div class="service-container">
-        <div class="service-item" id="service-1">
+        <div class="service-item wow zoomIn" id="service-1">
             <span>⚙️</span>
             <p id="service-1">Базовое ТО</p>
         </div>
-        <div class="service-item" id="service-2">
+        <div class="service-item wow zoomIn" id="service-2">
             <span>🛠️</span>
             <p id="service-2">Ремонт подвески и тормозов</p>
         </div>
-        <div class="service-item" id="service-3">
+        <div class="service-item wow zoomIn" id="service-3">
             <span>🔩</span>
             <p id="service-3">Замена цепей и ремней ГРМ</p>
         </div>
-        <div class="service-item" id="service-4">
+        <div class="service-item wow zoomIn" id="service-4">
             <span>🚗</span>
             <p id="service-4">Ремонт узлов и агрегатов</p>
         </div>
-        <div class="service-item" id="service-5">
+        <div class="service-item wow zoomIn" id="service-5">
             <span>🔍</span>
             <p id="service-5">Осмотр авто перед покупкой</p>
         </div>
-        <div class="service-item" id="service-6">
+        <div class="service-item wow zoomIn" id="service-6">
             <span>💻</span>
             <p id="service-6">Компьютерная диагностика</p>
         </div>
-        <div class="service-item" id="service-7">
+        <div class="service-item wow zoomIn" id="service-7">
             <span>🚀</span>
             <p id="service-7">Чип-тюнинг (Stage, DSG, Экология)</p>
         </div>
@@ -86,7 +91,7 @@
 </section>
 
 <!-- Контакты (с картами) -->
-<section class="contacts">
+<section class="contacts wow fadeInUp">
     <h2 id="contacts-title">📍 Наши сервисы</h2>
     <div class="contact-container">
         <div class="contact-item">
