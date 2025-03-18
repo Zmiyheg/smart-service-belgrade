@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         new WOW().init();
@@ -16,14 +15,20 @@
 </head>
 <body>
 
-<!-- Переключение языка -->
-<div class="language-switcher">
-    <button id="lang-ru">🇷🇺 Русский</button>
-    <button id="lang-sr">🇷🇸 Srpski</button>
-</div>
+<!-- Навигационное меню -->
+<nav class="navbar">
+    <div class="nav-container">
+        <h1 class="nav-title">Smart Service</h1>
+        <ul class="nav-links">
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
 
 <!-- Главный экран -->
-<header class="hero">
+<header class="hero" id="about">
     <div class="hero-overlay"></div>
     <div class="hero-content wow fadeInDown">
         <h1 id="title">🚗 Smart Service</h1>
@@ -56,7 +61,7 @@
 </section>
 
 <!-- Наши услуги -->
-<section class="services wow fadeInUp">
+<section class="services wow fadeInUp" id="services">
     <h2 id="services-title">📣 Наши услуги</h2>
     <div class="service-container">
         <div class="service-item wow zoomIn" id="service-1">
@@ -91,7 +96,7 @@
 </section>
 
 <!-- Контакты (с картами) -->
-<section class="contacts wow fadeInUp">
+<section class="contacts wow fadeInUp" id="contacts">
     <h2 id="contacts-title">📍 Наши сервисы</h2>
     <div class="contact-container">
         <div class="contact-item">
